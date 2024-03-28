@@ -4,22 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
     <title>Vanilla Weather App</title>
   </head>
   <body>
     <div class="container">
+        <form>
     <input type="text" 
     placeholder="Enter a city"
-    id="form"></input>
-    <button class="btn">Search</button>
+    id="city-input"
+    >
+</input>
+ <button class="btn">Search</button>
+    </form>
+   
     <h1>Los Angeles</h1>
     <h2>Wednesday 10:52</h2>
-    <h3>18°C</h3>
-    <ul class="weather-description">
-      <li>Description: Clear Sky</li>
+    <div class="flex-container">
+       <div class="temperature">
+        18°C
+       </div> 
+       <div class="weather-description">
+        <ul>
+            <li>Description: Clear Sky</li>
       <li>Humidity: 61%</li>
       <li>Wind: 2 km/h</li>
-    </ul>
+        </ul>
+       </div>
+    </div>
+   
+
+ 
     <footer>Open-source code by 
         <a href="https://github.com/spacemapache">Isabelle Ang</a>
     </footer>
